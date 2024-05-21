@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="pageContainer">
+  <view class="window">
+    <canvas class="mycanvas" canvas-id="mycanvas">
+
+        <view wx:if="{{!aShow}}" class="num_view">
+          <view class="num_text_view">
+            <text class="num_text">{{num}}\n</text>
+          </view>
+          <text class="num_tip">请摆好姿势，倒计时结束后将开始检测</text>
+        </view>
+        <view  wx:if="{{!camera && aShow}}" class="demo">
+          <image src="/image/demo.jpg" mode="aspectFit" class="demoo"></image>
+        </view>
+        <view  wx:if="{{!camera && aShow}}" class="viewtext">
+          <text class="wenzi">请与手机保持一定距离，</text>
+          <text class="wenzi">直至可以看到全身</text>
+        </view>
+    <camera class="camera" device-position="front" wx:if="{{camera && aShow}}" flash="off"></camera>
+    </canvas>
+  </view>
+  <view class="result">
+    <view class="right_view">
+      <text class="count">正确个数\n</text>
+      <text class="rightNum">{{countt}}\n</text>
+    </view>
+    <view class="error_view" >
+      <text class="count">错误情况\n</text>
+      <text>臀部过高:</text><text class="errorNum">{{hit_errorr}}\n</text>
+      <text>上抬错误:</text><text class="errorNum">{{up_errorr}}\n</text>
+      <text>下压错误:</text><text class="errorNum">{{down_errorr}}</text>
+    </view>
+  </view>
+  <view class="btn_all">
+    <view class="btn1_view">
+      <button class="btn btn_1" bindtap="start_time"  data-type="takePhoto" style="width: 100px;pointer-events: {{beginPointer}};background-color: {{btn1_color}};" >开始</button>
+    </view>
+    <view class="btn2_view">
+      <button class="btn btn_2" bindtap="close" data-type="endPhoto"  style="width: 100px;pointer-events: {{endPointer}};border-color: {{btn2_color}};color: {{btn2_color}};">停止</button>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,29 @@
+<!--pages/knowledge/knowledge.wxml-->
+<view class="pageContainer">
+  <view class="card_view center_view">
+    <view>
+      <text class="txt">人生的奔跑，不在于瞬间的爆发，</text>
+      <text class="txt txt1">取决于途中的坚持。</text>
+    </view>
+  </view>
+  <view>
+    <text class="title_txt">猜你想问</text>
+  </view>
+  <view class="content_view center_view">
+    <view class="container1">
+      <block wx:for-index="index" wx:for="{{list}}" class="block-view">
+        <view class="knowledgeItem">
+          <view class="questionItem" id="q{{item.key}}" bindtap="tapQuestion" data-index="{{index}}">
+            <image src="../../image/click_icon.png" class="icon-img"></image>
+            <text>{{item.question}}</text>
+          </view>
+          <view class="answerItem " id="q{{item.key}}ans" style="display:{{array[index]}};">
+            <!-- <image src="../../image/point_icon.png" class="icon-img icon-img-ans"></image> -->
+            <text class="ansText"> {{item.answer}} </text> 
+          </view>  
+        </view>
+      </block>
+    </view>
+  </view>
+  <view style="height: 10px;"></view>
+</view>

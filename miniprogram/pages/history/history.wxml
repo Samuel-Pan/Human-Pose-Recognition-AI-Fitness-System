@@ -1,0 +1,64 @@
+<!--pages/history/history.wxml-->
+<view class="pageContainer">
+  <view class="bar">
+      <view class="{{bar1Class}}" bindtap="showPushUp">
+        <text class="bar-txt">俯卧撑</text>
+      </view>
+      <view class="{{bar2Class}}" bindtap="showSitUp">
+        <text  class="bar-txt">仰卧起坐</text>
+      </view>
+  </view>
+  <view class="" style="display: {{pushUp_dis}};">
+    <view wx:if="{{hasData}}" class="container1" wx:for="{{dataList}}" wx:for-index="index">
+      <view class="container2">
+        <view class="time_view">
+          <view>
+            <text class="time_text">{{dataList[index].time}}</text>
+          </view>
+          <view class="num_view">
+            <text class="num_text">{{index+1}}</text>
+          </view>
+        </view>
+        <view class="result">
+          <view class="right_view">
+            <text class="count">正确个数\n</text>
+            <text class="rightNum">{{dataList[index].count}}\n</text>
+          </view>
+          <view class="error_view" >
+            <text class="count">错误情况\n</text>
+            <text>臀部过高:</text><text class="errorNum">{{dataList[index].hit_error}}\n</text>
+            <text>上抬错误:</text><text class="errorNum">{{dataList[index].up_error}}\n</text>
+            <text>下压错误:</text><text class="errorNum">{{dataList[index].down_error}}</text>
+          </view>
+        </view>
+      </view> 
+    </view>
+  </view>  
+  <view class="" style="display: {{sitUp_dis}};">
+    <view v-show="{{hasData2}}" class="container1" wx:for="{{dataList2}}" wx:for-index="index">
+      <view class="container2">
+        <view class="time_view">
+          <view>
+            <text class="time_text">{{dataList2[index].time}}</text>
+          </view>
+          <view class="num_view">
+            <text class="num_text">{{index+1}}</text>
+          </view>
+        </view>
+        <view class="result">
+          <view class="right_view">
+            <text class="count">正确个数\n</text>
+            <text class="rightNum">{{dataList2[index].count}}\n</text>
+          </view>
+          <view class="error_view" >
+            <text class="count">错误情况\n</text>
+            <text class="situp-txt">上抬错误:</text><text class="errorNum situp-txt">{{dataList2[index].up_error}}\n</text>
+            <text class="situp-txt">下压错误:</text><text class="errorNum situp-txt">{{dataList2[index].down_error}}</text>
+          </view>
+        </view>
+      </view> 
+    </view>
+  </view> 
+  <view style="height:10px">
+  </view>
+</view>

@@ -1,0 +1,81 @@
+<!--pages/home/index.wxml-->
+<!-- <view class="cover-view" style="display: {{display}};" bindtap="tapCoverView"></view> -->
+<view class="back">
+  <view class="imagesize">
+    <image src="../../image/index1.jpg" mode="widthFix"></image>
+  </view>
+  <text class="title">运动项目</text>
+  <view class="center_view">
+    <view class="sport-view">
+      <view class="sport-img-view">
+        <view class="sport-img-view1">
+          <image class="sport-img" src="../../image/sport_pushUp.jpg" mode="scaleToFill" bindtap="beginEx"></image>
+          <text class="sport-txt text" >俯卧撑</text>
+        </view>
+        <view class="sport-img-view2">
+          <image class="sport-img" src="/image/sport_SitUp.jpg" mode="scaleToFill" bindtap="beginEx2"></image>
+          <text class="sport-txt text">仰卧起坐</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="activityList">
+    <view  class="activityTitle">
+      <text style="margin-left:50rpx;font-size:40rpx;font-weight: bolder;">最新记录</text>
+      <text style="float:right;font-size:30rpx;margin-right:50rpx;margin-top:10rpx" bindtap="toAll">全部记录 ></text>
+    </view>
+    <text class="text" wx:if="{{!hasData && !hasData2}}" class="noList_text">暂无记录</text>
+    <!-- 俯卧撑 -->
+    <view wx:if="{{hasData}}" class="container1" >
+      <view class="container2">
+        <view class="time_view">
+          <view class="in-time_view in-time_view1">
+            <text class="type-text">俯卧撑</text>
+          </view>
+          <view class="in-time_view in-time_view2">
+            <text class="time_text">{{dataList[0].time}}</text>
+          </view>
+        </view>
+        <view class="result">
+          <view class="right_view">
+            <text class="count">正确个数\n</text>
+            <text class="rightNum">{{dataList[0].count}}\n</text>
+          </view>
+          <view class="error_view" >
+            <text class="count">错误情况\n</text>
+            <text>臀部过高:</text><text class="errorNum">{{dataList[0].hit_error}}\n</text>
+            <text>上抬错误:</text><text class="errorNum">{{dataList[0].up_error}}\n</text>
+            <text>下压错误:</text><text class="errorNum">{{dataList[0].down_error}}</text>
+          </view>
+        </view>
+      </view> 
+    </view>
+    <!-- 仰卧起坐 -->
+    <view wx:if="{{hasData2}}" class="container1" >
+      <view class="container2">
+        <view class="time_view">
+          <view class="in-time_view in-time_view1">
+            <text class="type-text">仰卧起坐</text>
+          </view>
+          <view class="in-time_view in-time_view2">
+            <text class="time_text">{{dataList2[0].time}}</text>
+          </view>
+        </view>
+        <view class="result">
+          <view class="right_view">
+            <text class="count">正确个数\n</text>
+            <text class="rightNum">{{dataList2[0].count}}\n</text>
+          </view>
+          <view class="error_view" >
+            <text class="count">错误情况\n</text>
+            <text>上抬错误:</text><text class="errorNum">{{dataList2[0].up_error}}\n</text>
+            <text>下压错误:</text><text class="errorNum">{{dataList2[0].down_error}}</text>
+          </view>
+        </view>
+      </view> 
+    </view>
+  </view>
+</view>
+<!-- <view>
+  <text>请选择</text>
+</view> -->

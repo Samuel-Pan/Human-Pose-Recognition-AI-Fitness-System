@@ -1,0 +1,57 @@
+<!--pages/myself/myself.wxml-->
+<view class="pageContainer">
+  <view class="header">
+      <view class="center_view">
+        <view wx-if="{{!hasLogin}}" class="headerImg" bindtap="getUserProfile">
+          <image src=""></image>
+        </view>
+        <view wx-if="{{hasLogin}}" class="headerImg" bindtap="update">
+          <image class="avatarImg" src="{{avatarUrl}}" mode="aspectFill"></image>
+        </view>
+      </view>
+      <view class="center_view">
+        <view wx-if="{{hasLogin}}">
+          <text class="header_text">{{nickName}}</text>  
+        </view>
+        <view wx-if="{{!hasLogin}}">
+          <text class="header_text">点击头像登录</text>  
+        </view>
+      </view>
+  </view>
+  <view class="detail">
+      <view class="container1 center_view">
+        <view class="container2">
+          <view class="infoItem">
+            <image src="../../image/icon_personInfo.png"></image>
+            <text bindtap="info" style="pointer-events:{{click}};">个人信息</text>
+            <text class="infoUpdate_text" bindtap="infoUpdate" wx:if="{{display && !isUpdate}}" >修改</text>
+            <text class="infoUpdate_text" bindtap="infoUpdate" wx:if="{{isUpdate}}" >完成</text>
+          </view>
+          <view class="answerItem" wx:if="{{display}}">
+            <text>身高:</text>
+            <input type="digit" value="{{height}}" disabled="{{isDisabled}}" bindblur="inputHeight"/>
+            <text>cm</text>
+            <text>体重:</text>
+            <input type="digit" value="{{weight}}" disabled="{{isDisabled}}" bindblur="inputWeight"/>
+            <text>kg</text>
+          </view>  
+        </view>
+      </view>
+      <view class="container1 center_view" bindtap="history">
+        <view class="container2">
+          <view class="infoItem">
+            <image src="../../image/icon_history.png"></image>
+            <text>历史记录</text>
+          </view>
+        </view>
+      </view>
+      <view class="container1 center_view" bindtap="exitLogin" >
+        <view class="container2">
+          <view class="infoItem">
+            <image src="../../image/icon_exitLogin.png"></image>
+            <text>退出登录</text>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,107 @@
+/* pages/knowledge/knowledge.wxss */
+/* page设置当前窗口背景色 */
+.pageContainer{
+  background:-webkit-linear-gradient(bottom,#bdd9fd,#ebf1fa,#f6faff);
+  overflow: scroll;
+  min-height: 100vh;
+  height: 100%;
+}
+.txt{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  display: inline-block;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #438eff;
+  text-shadow: rgb(255, 255, 255) 1px 0px 0px;
+  text-align: center;
+}
+.txt1{
+  padding-top:10px;
+  padding-bottom: 10%;
+}
+.title_txt{
+  display: block;
+  margin-top: 20px;
+  padding-left: 10px;
+  font-weight: bolder;
+  font-size: large;
+}
+.icon-img{
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+.center_view{
+  display: flex;
+  justify-content: center;  /* 水平居中 */
+}
+.card_view{
+  height:30%;
+  width: 100%;
+}
+.card_view view{
+  width: 90%;
+  border: 2px solid #fff;
+  background:-webkit-linear-gradient(bottom,#a8ceff,#ebf1fa,#eff6ff);
+  border-radius: 20px;
+  margin-top: 10px;
+  height: 120px;
+}
+.content_view{
+  width: 100%;
+}
+.container1{
+  width: 90%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 0.1px #a8ceff;
+  background-color: white;
+}
+.knowledgeItem{
+  width: 100%;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.questionItem{
+  border-radius: 20px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.answerItem{
+  width: 90%;
+  /* border-top:1px #f1f1f1 dashed; */
+  padding-bottom: 2px;
+  border-bottom:1px #f1f1f1 solid ;
+  /* box-shadow: 0px 2px 4px 0.1px #dfdfdf; */
+  /* border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; */
+}
+text{
+  /* text-indent: 2em; */
+  display:block;
+  line-height: 1.5em;
+  margin-left:10px;
+  margin-right:10px;
+  width: 85%;
+}
+.ansText{
+  width: 90%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding:0px 15px 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.show_view {
+  display:inline-block;
+}
+.hide_view {
+  display: none;
+}

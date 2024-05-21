@@ -1,0 +1,123 @@
+/* pages/sport/sport.wxss */
+.pageContainer{
+  background:-webkit-linear-gradient(top,#a8ceff,#ebf1fa,#fff);
+  overflow: scroll;
+  min-height: 100vh;
+  height: 100%;
+}
+.window{
+  margin-top: 10%;
+}
+.center_view{
+  display: flex;
+  justify-content: center;  /* 水平居中 */
+}
+.btn_all{
+  display: flex;
+  margin-top: 50px;
+  justify-content : center;
+  margin-top:16% ;
+}
+.btn1_view{
+  margin-right: 10%;
+}
+.btn2_view{
+  margin-left: 10%;
+}
+.btn{
+  width: 20px;
+}
+.btn_1{
+  background-color: #1f72df;
+  color: white;
+  border: 1px solid #fff;
+}
+.btn_2{
+  color: #fa5151;
+  background-color: #fff;
+  border: 1px solid #fa5151;
+}
+.num_view{
+  text-align: center;
+}
+.num_text_view{
+  margin-top: 25%;
+  display: flex;
+  justify-content: center;  /* 水平居中 */
+  align-items: center;  /* 垂直居中 */
+}
+.num_text{
+  font-size: 40px;
+  line-height: 2em;
+  color:#1f72df ;
+}
+.num_tip{
+  display: block;
+  margin-top: 10px;
+}
+.mycanvas{
+  width: 90%;
+  height: 250px;
+  margin: auto;
+  background-color: white;
+  padding-bottom: 60px;
+  /* display: flex;
+  align-items: center; */
+}
+.camera{
+  width: 100%;
+  height: 100%;
+}
+.demoo{
+  width: 100%;
+  height: 70%;
+  margin: 50px 0;
+}
+.demo{
+  width: 95%;
+  margin: auto;
+  height: 80%;
+}
+.wenzi{
+  display: block;
+  margin-bottom: 5px;
+}
+.viewtext{
+  text-align: center;
+  margin-top: 10px;
+}
+ .result{
+  /* text-align: center;
+  margin-top: 20px; */
+  display: flex;
+  justify-content: center;  /* 水平居中 */
+   /*align-items: center;  垂直居中 */
+  margin-top: 10%;
+} 
+.right_view{
+  padding-right:12%;
+  text-align: center;
+}
+.error_view{
+  padding-left: 12%;
+}
+.rightNum{
+  font-size: 60px;
+  color: #1f72df;
+}
+.count{
+  display: block;
+  margin-bottom: 7px;
+}
+/* 
+nth-child(2n)表示列表中的偶数标签，即选择第2、第4、第6……标签
+nth-child(n+3) 表示选择列表中的标签从第3个开始到最后（>=3） 
+*/
+.error_view:nth-child(2n){
+  line-height: 1.5em;
+}
+.errorNum{
+  font-size: 20px;
+  padding-left: 10px;
+  color: #fa5151;
+}

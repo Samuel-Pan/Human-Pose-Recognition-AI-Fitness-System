@@ -1,0 +1,27 @@
+/**index.wxss**/
+.pageContainer{
+  background:-webkit-linear-gradient(top,#a8ceff,#ebf1fa,#fff);
+  overflow: scroll;
+  min-height: 100vh;
+  height: 100%;
+}
+.avatar{
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 0px rgb(206, 206, 206);
+  margin-top: 80px;
+}
+input{
+  width: 80%;
+  margin-bottom: 60px;
+  margin-top:40px;
+  text-align: center;
+  border: 1px gray solid;
+  border-radius: 20px;
+  width: 200px;
+  /* box-shadow: 0px 0px 3px 0px gray; */
+}
+.ava_btn{
+  background-color: rgba(255, 255, 255, 0);
+}

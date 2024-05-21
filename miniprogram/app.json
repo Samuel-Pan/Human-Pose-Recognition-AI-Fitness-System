@@ -1,0 +1,49 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/home/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/knowledge/knowledge",
+    "pages/myself/myself",
+    "pages/prompt/index",
+    "pages/sport/sport",
+    "pages/history/history",
+    "pages/sportTwo/sportTwo"
+  ],
+  "tabBar": {
+    "custom": false,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "image/homeLogo_ns.png",
+        "selectedIconPath": "image/homeLogo_s.png"
+      },
+      {
+        "pagePath": "pages/knowledge/knowledge",
+        "text": "科普",
+        "iconPath": "image/knowledgeLogo_ns.png",
+        "selectedIconPath": "image/knowledgeLogo_s.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "image/myselfLogo_ns.png",
+        "selectedIconPath": "image/myselfLogo_s.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "AI健身系统",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

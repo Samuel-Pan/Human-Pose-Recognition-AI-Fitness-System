@@ -1,0 +1,217 @@
+/* pages/home/index.wxss */
+page{
+  height:100%;
+  width: 100%;
+}
+.back{
+  background-color: #fff;
+  background:-webkit-linear-gradient(bottom,#bdd9fd,#ebf1fa,#f6faff);
+  overflow: scroll;
+  min-height: 100vh;
+  height: 100%;
+  /* z-index: 200; */
+}
+.center_view{
+  display: flex;
+  justify-content: center;  /* 水平居中 */
+}
+image{
+  width: 95%;
+  text-align: center;
+  border-radius: 10px;
+  display:flex;                   
+  justify-content: center;        
+  align-items:center;          
+}
+.imagesize{
+  margin-top: 10px;
+  display:flex;                   
+  justify-content: center;        
+  align-items:center;                
+}
+.title{
+  display: block;
+  margin-top: 20px;
+  padding-left: 10px;
+  font-weight: bolder;
+  font-size:40rpx;
+  margin-left: 5%;
+}
+.sport-view{
+  margin-top: 15px;
+  background-color: white;
+  width: 90%;
+  border: 1px white solid;
+  border-radius: 20px;
+}
+.sport-img-view1,.sport-img-view2{
+  width: 120px;
+  margin: 20px 20px;
+}
+.sport-img-view{
+  display: flex;
+  align-items:center;   
+  justify-content: center;   
+}
+.sport-img{
+  width: 120px;
+  height: 75px;
+  border-radius: 20px;
+}
+.sport-img:active{
+  border: 1px #f3f3f3 solid;
+  box-shadow: 0px 0px 3px 0.1px #f3f3f3;
+}
+.sport-img:link{
+  border: none;
+  box-shadow: none;
+}
+.sport-txt{
+  margin-top: 5px;
+}
+button { 
+  margin-top: 30px;
+  width: 200px;
+  border-radius: 100px;
+  background: #1f72df;
+  color: white;
+  padding: 50rpx 20rpx;
+}
+.btn{
+  margin-top: 30px;
+  width: 200px;
+  border-radius: 100px;
+  background: #1f72df;
+  color: white;
+  padding: 50rpx 20rpx;
+}
+.activityList{
+  width: 94%;
+  margin: 50rpx auto;
+  /* height: 1110rpx ; */
+  border-radius: 20px;
+  background-color: #fff;
+  border-bottom: 3rpx solid #aaa;
+  flex-direction:row;
+}
+.text{
+  font-size:30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+.activityTitle{
+  padding-top: 25rpx;
+  height: 80rpx;
+  width: 100%;
+  border-bottom:1px solid rgb(172, 172, 172);
+}
+.activityItems{
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: 740rpx;
+}
+
+.container1{
+  width: 98%;
+  background-color: inherit;
+  margin-top: 10px;
+  margin-left: 1%;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.time_view{
+  padding-top: 10px;
+  display:flex;
+	flex-direction:row;
+  justify-content:flex-start;
+  width: 100%;
+}
+.time_text{
+  color: #5e5e5e;
+  font-size: 14px;
+  text-align: right;
+  display: block;
+  padding-right: 15px;
+}
+.type-text{
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+}
+.in-time_view{
+  height: 25px;
+}
+.in-time_view1{
+  width: 30%;
+  border: 1px #1f72df solid;
+  background-color: #1f72df;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+}
+.in-time_view2{
+  width: 60%;
+}
+.num_view{
+  margin-left: 35%;
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: #808080;
+  border-radius: 200px;
+  text-align: center;
+  color: #ffffff;
+  
+}
+.result{
+  /* text-align: center;
+  margin-top: 20px; */
+  display: flex;
+  justify-content: center;  /* 水平居中 */
+   /*align-items: center;  垂直居中 */
+  margin-top: 20px;
+} 
+.right_view{
+  padding-right:15%;
+  text-align: center;
+}
+.error_view{ 
+  padding-right:8%;
+}
+.error_view:nth-child(2n){
+  line-height: 1.5em;
+}
+.errorNum{
+  font-size: 20px;
+  padding-left: 10px;
+  color: #fa5151;
+}
+.rightNum{
+  font-size: 60px;
+  color: #1f72df;
+}
+.count{
+  display: block;
+  margin-bottom: 7px;
+}
+.noList_text{
+  font-size: 16px;
+  display: block;
+  margin-top: 50rpx;
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+/* .cover-view{
+  width: 100%;
+  height: 100%;
+  background: rgba(230, 230, 230, 0.534);
+  position: absolute;
+  top:0px;
+  z-index: 300;
+} */

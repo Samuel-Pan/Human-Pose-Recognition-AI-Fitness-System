@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="pageContainer">
+  <button class="avatar-wrapper ava_btn" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image class="avatar" src="{{avatarUrl}}" mode="aspectFit"></image>
+  </button> 
+  <view style="display: flex;justify-content: center;">
+    <input type="nickname" class="weui-input" placeholder="请输入昵称" bindfocus="getNickName" value="{{nickName}}" bindblur="gotNickName"/>
+  </view>
+  <button bindtap="confirmClick" type="primary" style="background-color: #1f72df;margin-top: 20%;">确认</button>
+</view>
+  
+
+
