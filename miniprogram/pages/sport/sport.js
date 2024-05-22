@@ -100,8 +100,7 @@ Page({
                   var im_path = res.data
                   console.log(im_path)
                   wx.request({
-                    //url: 'http://127.0.0.1:90/detect?url=' + im_path,  //换成当前的ip地址
-                    url: 'http://www.farvuav.cc:90/detect?url=' + im_path,
+                    url: 'http://127.0.0.1:90/detect?url=' + im_path,  //换成当前的ip地址
                     method:"GET",
                     header:{"Content-type":"application/json"},
                     success:function(res){
