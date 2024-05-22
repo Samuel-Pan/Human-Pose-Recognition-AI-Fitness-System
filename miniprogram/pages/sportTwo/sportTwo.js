@@ -105,8 +105,7 @@ Page({
             console.log(res.tempImagePath);
             var tempImagePath = res.tempImagePath
             wx.uploadFile({
-              //url: 'http://127.0.0.1:90/upload', 
-              url: 'http://www.farvuav.cc:90/upload',
+              url: 'http://127.0.0.1:90/upload',
               filePath: tempImagePath,
               name: 'file',
               header:{"Content-type":"multipart/form-data"},
