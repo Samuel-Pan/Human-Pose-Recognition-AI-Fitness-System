@@ -113,8 +113,7 @@ Page({
                 var im_path = res.data
                 console.log(im_path)
                 wx.request({
-                  //url: 'http://127.0.0.1:90/situp?url=' + im_path, 
-                  url: 'http://www.farvuav.cc:90/situp?url=' + im_path,
+                  url: 'http://127.0.0.1:90/situp?url=' + im_path, 
                   method:"GET",
                   header:{"Content-type":"application/json"},
                   success:function(res){
